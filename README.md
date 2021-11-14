@@ -4,7 +4,8 @@
 ## LAB - 11
 - [Readme File ](https://github.com/MohammadAljadayh/capsSystem/blob/main/README.md).
 - [Action](https://github.com/MohammadAljadayh/capsSystem/actions).
-- [pull request]().
+- [pull request](https://github.com/MohammadAljadayh/capsSystem/pull/1).
+- [pull request](https://github.com/MohammadAljadayh/capsSystem/pull/2).
 - [Main Repo](https://github.com/MohammadAljadayh/capsSystem).
 
 > Setup
