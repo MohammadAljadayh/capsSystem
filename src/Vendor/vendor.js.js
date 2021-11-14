@@ -10,9 +10,9 @@ setInterval(() => {
     customer: faker.name.findName(),
     address: faker.address.streetAddress(),
 };
-  // we are calling, firing that event
+ 
   console.log('----------------------');
-  // .emit is a method used t o fire event
+
   events.emit('pickup', customerOrder);
   console.log('----------------------');
 
