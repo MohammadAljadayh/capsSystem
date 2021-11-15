@@ -1,39 +1,45 @@
 'use strict';
 
-const events = require('./event-pool'); 
-
-//
-require('./src/Vendor/vendor.js');
-require('./src/Drivers/driver');
+const PORT = process.env.PORT || 3000;
+const io = require('socket.io')(PORT);
+const caps = io.of('/caps');
 
 
 let time = new Date().toLocaleString();
-events.on('pickup', payload => {
+
+caps.on('connection', (socket) => {
+
+  socket.on('pickup', payload => {
   console.log('EVENT:', {
       event: 'pickup',
       time: time,
       payload: payload,
   });
+  
 });
 
 
-events.on('in-transit', payload => {
+socket.on('in-transit', payload => {
   console.log('EVENT:', {
       event: 'in-transit',
       time:time,
       payload: payload,
 
   });
+
 });
 
 
 
-events.on('delivered', payload => {
+socket.on('delivered', payload => {
   console.log('EVENT:', {
       event: 'delivered',
       time:time,
       payload: payload,
     
   });
- 
+  
+})
 });
+
+module.exports = caps

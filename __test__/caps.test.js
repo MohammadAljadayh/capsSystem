@@ -1,6 +1,6 @@
 'use strict';
 
-const events = require('../event-pool');
+const socket = require('../caps/caps');
 
 let payload = {
     store: '1-206-flowers',
@@ -15,20 +15,20 @@ describe('caps System test', () => {
 
     it('caps pickup ', () => {
         const caps = require('../caps');
-       events.emit('pickup', payload);
-        expect(events.emit('pickup', payload)).toEqual(true);
+       socket.emit('pickup', payload);
+        expect(socket.emit('pickup', payload)).toEqual(true);
     });
 
     it('caps in-transit', () => {
         const caps = require('../caps');
-        events.emit('in-transit', payload);
-        expect( events.emit('in-transit', payload)).toEqual(true);
+        socket.emit('in-transit', payload);
+        expect( socket.emit('in-transit', payload)).toEqual(true);
     });
 
     it('caps delivered', () => {
         const caps = require('../caps');
-        events.emit('delivered', payload);
-        expect(events.emit('delivered', payload)).toEqual(true);
+        socket.emit('delivered', payload);
+        expect(socket.emit('delivered', payload)).toEqual(true);
     });
 
 
