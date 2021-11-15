@@ -4,9 +4,9 @@
 ## LAB - 12
 - [Readme File ](https://github.com/MohammadAljadayh/capsSystem/blob/main/README.md).
 - [Action](https://github.com/MohammadAljadayh/capsSystem/actions).
-- [pull request](https://github.com/MohammadAljadayh/capsSystem/pull/1).
-- [pull request](https://github.com/MohammadAljadayh/capsSystem/pull/2).
-- [ Socket branch Repo](https://github.com/MohammadAljadayh/capsSystem).
+- [pull request](https://github.com/MohammadAljadayh/capsSystem/pull/3).
+- [pull request](https://github.com/MohammadAljadayh/capsSystem/pull/4).
+- [ Socket branch Repo](https://github.com/MohammadAljadayh/capsSystem/tree/lab12).
 
 > Setup
 
