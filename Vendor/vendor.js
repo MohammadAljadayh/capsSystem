@@ -1,7 +1,11 @@
 'use strict';
 
-const events = require('../../event-pool');
+
 const faker = require('faker');
+const io = require('socket.io-client');
+const host = 'http://localhost:3000';
+
+const connectionToCaps = io.connect(`${host}/caps`);
 
 setInterval(() => {
   let customerOrder = {
@@ -13,14 +17,14 @@ setInterval(() => {
  
   console.log('----------------------');
 
-  events.emit('pickup', customerOrder);
+  connectionToCaps.emit('pickup', customerOrder);
   console.log('----------------------');
 
 },4000);
 
-events.on('delivered', payload => {
+connectionToCaps.on('delivered', payload => {
 
   console.log(` VENDOR: Thank you for delivering  ${payload.orderID}`);
 });
 
-module.exports = events;
+module.exports = connectionToCaps;

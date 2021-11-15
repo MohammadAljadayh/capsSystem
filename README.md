@@ -1,24 +1,28 @@
 # capsSystem
 
 
-## LAB - 11
+## LAB - 12
 - [Readme File ](https://github.com/MohammadAljadayh/capsSystem/blob/main/README.md).
 - [Action](https://github.com/MohammadAljadayh/capsSystem/actions).
 - [pull request](https://github.com/MohammadAljadayh/capsSystem/pull/1).
 - [pull request](https://github.com/MohammadAljadayh/capsSystem/pull/2).
-- [Main Repo](https://github.com/MohammadAljadayh/capsSystem).
+- [ Socket branch Repo](https://github.com/MohammadAljadayh/capsSystem).
 
 > Setup
 
 `.env` **requirements**
+- `PORT` = `3000`
+- `host` = `http://localhost:3000`
 
 - `STORE` = 1-206-flowers
 
 > Running the app
 
 - `node caps.js`
+- `node vendor.js`
+- `node driver.js`
 
-![caps](./caps.PNG)
+![caps](socket.PNG)
 
 
 
@@ -31,4 +35,4 @@
 
 > UML
 
-![uml](lab11.PNG)
+![uml](lab12.PNG)
