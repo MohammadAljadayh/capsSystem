@@ -15,15 +15,15 @@
 - `host` = `http://localhost:3000`
 
 - `STORE` = 1-206-flowers
+- `STORE` = acme-widgets
 
 > Running the app
 
-- `node caps.js`
-- `node vendor.js`
+- `node msqQ.js`
+- `node 1-206-flowers.js ` or `node acme-widgets.js `
 - `node driver.js`
 
-![caps](socket.PNG)
-
+![caps](msgqueuerun.PNG)
 
 
 > Tests
@@ -35,4 +35,4 @@
 
 > UML
 
-![uml](lab12.PNG)
+![uml](msgQueue.PNG)

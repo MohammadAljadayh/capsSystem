@@ -1,6 +1,6 @@
 'use strict';
 
-const socket = require('../caps/caps');
+const socket = require('../msgQserver/caps');
 
 let payload = {
     store: '1-206-flowers',
